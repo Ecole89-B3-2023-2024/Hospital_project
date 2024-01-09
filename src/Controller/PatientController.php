@@ -11,6 +11,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+#[Is_Granted('ROLE_ADMIN')]
+#[Is_Granted('ROLE_PERSONNEL')]
 #[Route('/patient')]
 class PatientController extends AbstractController
 {
